@@ -1,0 +1,40 @@
+.container span svg{
+    scale: 2;
+    cursor: pointer;
+}
+
+
+.container span{
+  position: absolute;
+  left: 30px;
+  top:76px;
+  z-index: 2;
+}
+
+.HamSideBar{
+    position: absolute;
+    display: flex;
+    left: 0px;
+    flex-direction: column;
+    height: 400px;
+    width: 50%;
+    justify-content: center;
+    gap: 50px;
+    background-color: aquamarine;
+    padding: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    z-index: 1;
+    transition: .1s ease;
+    transform: translateX(var(--move));
+}
+
+.HamSideBar a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.HamSideBar a svg{
+  margin-bottom: 8px;
+}

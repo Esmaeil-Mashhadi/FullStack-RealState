@@ -1,0 +1,99 @@
+.formInput{
+    position: absolute;
+    width: fit-content;
+    top: 15%;
+    transform: translateY(-50%);
+    left: 50%;
+    transform: translateX(-50%);
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 600px;
+
+   
+}
+
+.formContainer{
+    padding: 10px;
+    border: dotted;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgb(115, 246, 174);
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 400px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.formContainer div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+.formContainer label{
+    position: absolute;
+    left: 45px;
+    transform: translateY(-10px);
+    font-weight: bold;
+}
+
+.formContainer label::before{
+    position: absolute;
+    content: "";
+    width: fit-content;
+    height: 4px;
+    background-color: white;
+    width: 100%;
+    top: 50%;
+    z-index: -1;
+    border: none;
+}
+
+.formContainer button{
+    padding: 5px;
+    border: none;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.formContainer button:hover{
+    scale: 1.1;
+    cursor: pointer;
+    transition: .2s ease;
+    box-shadow: 0px 0px 5px rgb(115, 246, 174);
+}
+
+
+.formContainer input{
+    padding: 10px;
+    outline: none;
+    border-radius: 5px;
+    border-style: dotted;
+}
+
+.formContainer input:focus + label{
+    transform: translateY(-20px);
+    transition: .2s ease;
+}
+
+.already{
+    margin-top: 20px;
+    color: darkgreen;
+}
+.already a{
+    font-weight: bold;
+}
+.already a:hover{
+    text-decoration: underline;
+}
+
+

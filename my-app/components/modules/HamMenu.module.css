@@ -1,0 +1,63 @@
+.hamContainer{
+    position: relative;
+}
+.Menu{
+ position: absolute;
+ height: 500px;
+ right: 0px;
+ min-width: 80vw;
+ background-color: rgba(115, 246, 174, 0.741);
+ z-index: 1;
+ border-radius: 10px;
+ transition: .2s ease;
+
+}
+
+.Menu ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+
+.hamMenu{
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    position: relative;
+    z-index: 2;
+}
+
+.hamMenu span{
+    width: 30px;
+    height: 5px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.819);
+    transform-origin: 5px;
+}
+
+.hamMenu span:nth-child(2){
+  transform: var(--transform);
+  opacity: var(--opacity);
+  transition: .5s ;
+}
+
+.hamMenu span:first-child{
+    transform: var(--transform);
+    transition: .5s ease;
+
+}
+
+.hamMenu span:last-child{
+    transform: var(--transform);
+    transition: .5s ease;
+}
+
+@media screen and (max-width:300px) {
+    .Menu{
+        right: -10px;
+    }
+}

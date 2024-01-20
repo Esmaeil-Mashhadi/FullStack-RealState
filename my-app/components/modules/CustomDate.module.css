@@ -1,0 +1,26 @@
+.container input{
+    border-style: dotted;
+    padding: 15px;
+    border-width: 2px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    transition: .2s ease;
+    
+}
+
+.container input:focus{
+    background-color: aquamarine;
+    outline: none;
+    border-width: 2px;
+    border-style: dotted;
+    
+}
+
+.container p{
+    color: rgb(2, 80, 2);
+    background-color: rgba(127, 255, 212, 0.833);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin-top: 20px;
+}

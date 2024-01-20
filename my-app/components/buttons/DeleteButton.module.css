@@ -1,0 +1,18 @@
+.remove{
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px orange;
+    font-weight: bold;
+    transition: .2s ease;
+    background-color: transparent;
+}
+
+.remove:hover{
+    cursor: pointer;
+    background-color: pink;
+}
+
+.remove:active{
+    background-color: lightcoral;
+}

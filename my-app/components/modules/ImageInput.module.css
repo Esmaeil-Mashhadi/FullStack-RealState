@@ -1,0 +1,78 @@
+.container p{
+    color: rgb(2, 80, 2);
+    background-color: rgba(127, 255, 212, 0.833);
+    padding: 5px;
+    border-radius: 5px;
+    max-width: 400px;
+    margin-top: 20px;
+
+}
+
+.uploadContainer{
+ display: flex;
+ width: 400px;
+ height: 200px;
+ justify-content: space-around;
+ align-items: center;
+
+}
+
+.uploadContainer button{
+    box-shadow: 0px 0px 5px lightblue;
+    background-color: transparent;
+    border: none;
+    padding: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.imageTag{
+   border-radius: 10px;
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+
+}
+.imageContainer{
+    position: relative;
+    border-radius: 10px;
+    width: 120px;
+    height: 75%;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+
+
+.remove{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.456);
+    border-radius: 5px;
+    white-space: nowrap;
+    padding: 5px;
+    font-size: 12px;
+    left: 0px;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+    transform: translateY(30px);
+}
+.remove:hover{
+    background-color: red;
+}
+
+.imageContainer:hover  .remove{
+ transform: translateY(0px);
+ transition: .2s ease;
+}
+
+@media screen and (max-width : 450px) {
+    .container p {
+        width: 250px;
+        margin: auto;
+    }
+    .uploadContainer{
+        width: 250px;
+        margin: auto;
+    }
+}

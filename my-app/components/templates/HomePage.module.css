@@ -1,0 +1,153 @@
+.container{
+    margin: 50px;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.description h1{
+    animation: header ease-in-out 1s forwards;
+  
+}
+
+@keyframes header {
+    from{
+      scale: .5;
+    }
+    to{
+        scale: 1;  
+    }
+}
+
+.description ul{
+    display: flex;
+    padding: 50px;
+    gap: 50px;
+    list-style: none;
+}
+
+
+.description li span{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0px 0px 5px;
+    border-radius: 5px;
+    background-color: aquamarine;
+    padding: 5px;
+    font-weight: bold;
+    justify-content: center;
+    min-width: 100px;
+   
+}
+.description span svg{
+    scale: .9;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.cities{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.cities h3{
+ display: flex;
+ align-items: center;
+ gap: 10px;
+}
+
+.cities h3 svg{
+    scale: 1.5;
+}
+
+.cities ul{
+width: 98%;
+ display: flex;
+ list-style: none;
+ flex-wrap: wrap;
+ margin-top: 20px;
+  gap: 50px;
+  justify-content: space-between;
+}
+
+.cities ul li{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(1, 99, 67);
+    padding: 10px;
+}
+
+
+@media screen and (max-width:1120px) {
+    .description h1{
+        font-size: 15px;
+  
+    }
+}
+
+@media screen and (max-width:650px) {
+    .description h1{
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .description ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);    
+        grid-template-rows: repeat(2, 1fr);
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    .description h1{
+        text-align: center;
+    }
+
+    .description li span{
+        display: flex;
+        justify-content: center;
+        min-width: 100px;
+        font-size: 12px;
+    }
+
+
+
+    .cities ul{
+        display: grid;
+        font-size: 12px;
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media screen and (max-width:300px) {
+ .cities ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+ }
+
+ .cities ul li{
+    max-width: 100px;
+ }
+ .cities h3{
+    font-size: 12px;
+ }
+}

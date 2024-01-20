@@ -1,0 +1,71 @@
+.container{
+    width: 200px;
+    height: fit-content;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgb(1, 152, 102);
+    padding: 10px;
+}
+
+.container p{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+    font-size: large;
+}
+
+.container p svg{
+    color: rgb(1, 97, 65);
+}
+
+.container a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: large;
+    transition: .2s ease;
+
+    
+}
+
+.container a svg{
+    scale: 1.2;
+    color: rgb(1, 97, 65);
+}
+
+
+.container a:hover{
+   transform: translateX(5px);
+   font-weight: bold;
+}
+.container a:hover svg{
+    color: darkcyan;
+}
+
+.categories{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.HamContainer{
+    display: none;
+}
+
+@media screen and (max-width:550px) {
+ .container{
+    display: none;
+ }
+ .HamContainer{
+    display: block;
+
+ }
+
+ .HamContainer svg{
+    scale: 2;
+    margin-top: 7px;
+ }
+}
+   

@@ -1,0 +1,97 @@
+.priceFilter{
+    display: flex;
+    margin-top: 20px;
+    height: fit-content;
+    flex-direction: column;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.priceContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.priceContainer h3{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceContainer h3 svg{
+    transform: translateY(2px);
+}
+
+.priceContainer div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.priceContainer input{
+    background-color: darkcyan;
+    border: none;
+    padding: 5px;
+    border-radius: 5px;
+    outline: none;
+    max-width: 100px;
+    color: white;
+}
+
+.inputRange{
+    position: relative;
+    
+    
+}
+
+.inputRange input{
+    position: absolute;
+    width: 100%;
+    background: none;
+    -webkit-appearance: none;
+    appearance: none;
+    top: -5px;
+    pointer-events: none;
+    z-index: 3;
+}
+
+.inputRange input[type ="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    height: 17px;
+    width: 17px;
+    background-color: darkcyan;
+    border-radius: 50%;
+    pointer-events: auto;
+    cursor: pointer;
+    
+}
+
+
+.progress{
+    position: relative;
+    height: 5px;
+    background-color: rgba(0, 0, 0, 0.551);
+    border-radius: 5px;
+}
+
+
+.progress .bar{
+    position: absolute;
+    left: var(--minVar);
+    right: var(--maxVar);
+    background-color: rgb(0, 255, 195);
+    height: 100%;
+}
+
+
+
+
+
+
+

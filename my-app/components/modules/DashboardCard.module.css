@@ -1,0 +1,55 @@
+
+.container{
+    margin: 20px;
+    position: relative;
+}
+
+.container:hover .buttons{
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+.buttons{
+ opacity: 0;
+ transform: translateY(-20px);
+ transition: .5s ease;
+ display: flex;
+ width: 100%;
+ justify-content: center;
+ gap: 20px;
+}
+
+
+.buttons button:first-child{
+ background-color: rgba(255, 166, 0, 0.533);
+ border-radius: 5px;
+ border: none;
+ padding: 5px;
+ cursor: pointer;
+ display: flex;
+ align-items: center;
+ gap: 5px;
+ 
+}
+.buttons button:nth-child(2){
+    background-color: rgba(250, 113, 113, 0.533);
+    border-radius: 5px;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+   }
+
+.buttons button:hover{
+    transition: .2s ease;
+    scale: 1.1;
+}
+
+@media screen and (max-width: 300px) {
+ .buttons {
+    border: solid;
+ }
+}

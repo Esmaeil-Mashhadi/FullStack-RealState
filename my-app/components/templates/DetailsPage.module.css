@@ -1,0 +1,165 @@
+.container{
+    display: flex;
+    justify-content: center;
+    margin:50px 10px;
+    gap: 20px;
+}
+
+
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 650px;
+}
+.main h1{
+  color: rgb(1, 114, 77);
+}
+.main h3{
+    margin-top: 20px;
+    position: relative;
+
+}
+.main h3::before{
+    position: absolute;
+    content:"";
+    height: 1px;
+    width: 100%;
+    background-color: rgb(2, 112, 76);
+    bottom: -5px;
+}
+
+.main span{
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.main svg{
+    scale: 1.5;
+}
+
+.sideBar{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+    padding: 10px;
+    height: fit-content;
+    min-width: fit-content;
+    margin-top: 80px;
+}
+
+.realState{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgb(4, 121, 82);
+    border-radius: 5px;
+    
+
+}
+.realState p {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+    transition: .2s ease;
+}
+.realState p svg{
+    scale: 2;
+    color:rgb(4, 112, 76);
+    margin-bottom: 15px;
+}
+.realState p span{
+    font-weight: bold;
+    color: rgb(3, 122, 82);
+}
+
+.realState span{
+    display: flex;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.realState svg{
+    scale: 1.5;
+}
+
+.buttom{
+     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0px 0px 5px rgb(4, 121, 82);
+    border-radius: 5px;
+    
+}
+
+.buttom p{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 30px;
+    transition: .2s ease;
+    margin-left: 8px;
+
+}
+.buttom svg{
+    scale: 1.2;
+    color: rgb(2, 87, 59);
+}
+
+.share button{
+    background-color: red;
+}
+
+
+@media screen and (max-width:850px) {
+ .container {
+    flex-direction: column;
+ }
+  .buttom{
+    flex-direction: row;
+    gap: 50px;
+ }
+}
+
+@media screen and (max-width:650px) {
+ .main h1 {
+    font-size: 20px;
+ }
+
+ .sideBar{
+    font-size: 15px;
+ }
+
+ .buttom{
+    flex-direction: column;
+    gap: 5px;
+ }
+}
+
+
+@media screen and (max-width:450px) {
+ 
+    .main h1 {
+        font-size: 15px;
+     }
+    
+     .sideBar{
+        font-size: 10px;
+     }
+    
+     .buttom{
+        flex-direction: column;
+        gap: 5px;
+     }
+
+}
+

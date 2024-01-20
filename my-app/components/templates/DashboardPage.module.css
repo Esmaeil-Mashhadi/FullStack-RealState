@@ -1,0 +1,27 @@
+.container{
+    margin: 50px 40px;
+}
+
+.container h3{
+    margin-bottom: 10px;
+}
+.container p {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+
+.container svg{
+font-size: 1.5rem;
+color: rgb(2, 108, 73);
+}
+
+.createdAt{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.createdAt span{
+    color: green;
+}

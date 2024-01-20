@@ -1,0 +1,55 @@
+.container{
+    width: 50%;
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+
+.container p{
+    font-size: 12px;
+    font-weight: bold;
+    color: rgb(1, 106, 1);
+}
+
+.container input{
+    border: dotted;
+    border-radius: 5px;
+    border-width: 1.6px;
+    padding: 5px;
+    outline: none;
+    transition: .2s ease;
+}
+
+.container input:focus{
+    background-color: aquamarine;
+}
+
+.container textarea {
+    border-radius: 5px;
+    resize:none;
+    padding: 15px;
+    border: dotted;
+    border-width: 2px;
+    outline: none;
+    transition: ease .2s;
+    height: 150px;
+}
+
+.container textarea:focus{
+    background-color: aquamarine;
+}
+
+@media screen and (max-width:800px) {
+    .container{
+        margin: auto;
+        width: 80%;
+    }
+    .container input{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:450px) {
+
+}

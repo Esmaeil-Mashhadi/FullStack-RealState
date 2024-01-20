@@ -1,0 +1,31 @@
+.button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 550;
+    transition: .2s ease;
+    font-size: 1rem;
+    color: rgb(107, 4, 4);
+}
+
+.button svg{
+    scale: 1.2;
+    color: rgb(107, 4, 4);
+    transform: scaleX(-1);
+    transition: .2s ease;
+
+}
+
+.button:hover svg{
+    transform: scaleX(1);
+    color: rgb(202, 7, 7);
+}
+.button:hover{
+    color: rgb(202, 7, 7);
+    cursor: pointer;
+    transform: translateX(4px);
+}

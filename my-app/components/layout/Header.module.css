@@ -1,0 +1,89 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(115, 246, 174);
+    border-radius: 5px;
+    padding: 20px;
+    align-items: center;
+    font-weight: bold;
+}
+
+.login a{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.login a svg{
+    scale: 1.3;
+    transition: .2s ;
+}
+
+.header ul{
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    align-items: center;
+}
+.header ul li a{
+    position: relative;
+}
+.header a:hover{
+    color: rgb(163, 4, 163);
+
+}
+.header a:hover::before{
+  transform: translateY(20px);
+  opacity: 1;
+}
+
+.header ul li a::before{
+ content: "";
+ width: 100%;
+ height: 2px;
+ border-radius: 10px;
+ background-color:  rgb(236, 4, 236);
+ position: absolute;
+ transform: translateY(38px);
+ opacity: 0;
+ transition: ease .2s;
+}
+
+
+.login:hover svg{
+    transform: translateX(3px);
+}
+
+.dashboard{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+}
+.dashboard:hover{
+    color: purple;
+}
+
+.dashboard svg{
+    scale: 1.4;
+}
+
+.dashboard:hover svg{
+    transform: rotate(360deg);
+    cursor: pointer;
+    transition: .2s ease;
+    color: purple;
+}
+
+.HamMenu{
+    display: none;
+}
+
+@media screen and (max-width:700px) {
+  .rightSide {
+    display: none;
+  }
+  .HamMenu{
+    display: block;
+  }
+}

@@ -1,0 +1,52 @@
+.container{
+    margin: 30px;
+    padding: 10px;
+    display: flex;
+ 
+}
+.card{
+    padding: 10px;
+    overflow: hidden;
+}
+.buttons{
+    display: flex;
+    gap: 10px;
+    bottom: 10px;
+    right: 46%;
+    width: 100%;
+    align-items: flex-end;
+    transform: translateY(100%);
+    transition: .2s ease;
+    justify-content: center;
+}
+
+
+.card:hover > .buttons{
+    transform: translate(0px);
+}
+.buttons button{
+    width: 100%;
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease;
+    font-weight: bold;
+    height: 30px;
+    white-space: nowrap;
+    cursor: pointer;
+    margin: 10px;
+}
+
+.buttons button:first-child{
+    background-color: rgba(255, 0, 0, 0.496);
+}
+.buttons button:nth-child(2){
+    background-color: rgba(128, 255, 0, 0.566);
+}
+
+.buttons button:hover{
+    box-shadow: 0px 0px 5px black; 
+}
+
+
